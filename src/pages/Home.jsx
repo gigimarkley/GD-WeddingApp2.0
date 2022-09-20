@@ -1,12 +1,15 @@
 import React from 'react';
+import AboutUs from '../components/AboutUs';
+import Countdown from '../components/Countdown';
 
 function Home() {
     return (
-        <h1>this is the homepage</h1>
+        <>  
+            <AboutUs/>
+            <Countdown/>
+        </>
+      
     );
 }
 
 export default Home;
-
-//AboutUs
-//Countdown
