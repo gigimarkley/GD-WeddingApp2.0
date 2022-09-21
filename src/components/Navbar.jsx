@@ -18,7 +18,7 @@ function NavbarComponent() {
   
     return (
         <div style={{
-           display: 'block', width: '100%', padding: 30, backgroundColor: colors.lace
+           display: 'block', width: '100%', padding: 30, backgroundColor: colors.dustyBlue
        }}>
             <Navbar style={{ backgroundColor: colors.lightBlue }} expand="md">
                 <img src={logo} className="App-logo" alt="logo" width="10%" height="10%" />

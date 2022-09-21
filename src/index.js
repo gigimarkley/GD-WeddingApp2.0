@@ -10,8 +10,20 @@ import WeddingParty from "./pages/WeddingParty";
 import NoPage from "./pages/NoPage";
 import OurStory from "./pages/OurStory"
 import Admin from "./pages/Admin";
+import WebFont from 'webfontloader';
+import React, {useEffect} from 'react';
 
 export default function App() {
+
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Montserrat','Shadows Into Light Two','Meow Script','Ms Madi', "Amatic SC"]
+      }
+    });
+   }, []);
+
   return (
     <BrowserRouter>
       <Routes>

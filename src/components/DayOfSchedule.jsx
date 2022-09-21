@@ -1,17 +1,31 @@
 import React from 'react';
-import {pageTitle, detailPageSubtitles, text} from '../styling'
+import {pageTitle, detailPageSubtitles, text, detailPageSubtitles2} from '../styling'
 
 function DayOfSchedule() {
     return (
-        <>
-            <h1 style={pageTitle}>The Day Of Details</h1>
-                <h4 style={detailPageSubtitles}>Attire</h4>
-                    <p style={text}>Smart Casual</p>
-                    <p>insert weather forecast widget</p>
-                <h4 style={detailPageSubtitles}>Directions</h4>
-                    <p style={text}>insert venue address</p> 
-                    <p>insert google maps widget</p>
-        </>
+        <div style={{paddingTop:'30px'}}>
+            <h1 style={pageTitle}>Day Of the Reception</h1>
+                <h3 style={detailPageSubtitles2}>More Prep</h3>
+                    <h5 style={detailPageSubtitles}>Date/Time</h5>
+                        <p style={text}>Friday, October 7th, 2023 at 9 AM</p>
+                    <h5 style={detailPageSubtitles}>Location</h5>
+                        <p style={text}>Our House, 772 W 1st St, Claremont, CA</p> 
+                        <p>insert google maps widget</p>
+                    <h5 style={detailPageSubtitles}>Volunteers</h5>
+                        <p style={text}>Person & Person: Bring cake to the venue</p>
+                        <p style={text}>Person & Person: Set up decor at the venue</p>
+                        <p style={text}>Person & Person: Set up food at the venue</p>
+                        <p style={text}>Person & Person: Set up activities at the venue</p>
+                <h3 style={detailPageSubtitles2}>Family & Wedding Party Pictures</h3>
+                    <h5 style={detailPageSubtitles}>Date/Time</h5>
+                        <p style={text}>Friday, October 6th, 2023 at 3 PM</p>
+                    <h5 style={detailPageSubtitles}>Location</h5>
+                        <p style={text}>California Botanic Gardens, Claremont, CA</p> 
+                        <p>insert google maps widget</p>
+                    <h5 style={detailPageSubtitles}>Attire</h5>
+                        <p style={text}>Semi-Formal, blue preferred, florals encouraged</p>
+                        <p>insert weather forecast widget</p>
+        </div>
     );
 }
 

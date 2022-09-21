@@ -1,11 +1,12 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import {pageTitle,rsvpPageSubtitles} from '../styling'
+import backgroundImage from '../images/background.png'
 
 function RSVP() {
 
     return (
-        <>
+        <div style={{alignItems: 'center', textAlign: 'center',height: '2000px', backgroundImage: `url(${backgroundImage})` }}>
             <h1 style={pageTitle}>RSVP Form</h1>
             <Form>
                 <FormGroup>
@@ -45,7 +46,7 @@ function RSVP() {
 
             <Button>Submit</Button>
         </Form>
-      </>
+      </div>
     );
 }
 
