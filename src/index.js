@@ -9,6 +9,7 @@ import Details from "./pages/Details";
 import WeddingParty from "./pages/WeddingParty";
 import NoPage from "./pages/NoPage";
 import OurStory from "./pages/OurStory"
+import Admin from "./pages/Admin";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="Gifts" element={<Gifts />} />
           <Route path="Details" element={<Details />} />
           <Route path="WeddingParty" element={<WeddingParty />} />
+          <Route path="Admin" element={<Admin />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

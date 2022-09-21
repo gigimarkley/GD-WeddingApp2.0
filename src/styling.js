@@ -53,5 +53,5 @@ export const countdownBody = {
 }
 
 export const text = {
-    color: 'blue'
+    color: colors.navyBlue
 }
