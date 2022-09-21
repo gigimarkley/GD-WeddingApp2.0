@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {countdownTitle, countdownBody} from '../styling'
 
 
 const Countdown = () => {
@@ -54,9 +55,9 @@ const Countdown = () => {
 
 	return (
 		<>
-            <h1>Countdown</h1>
-            <h4>{date}</h4>
-            <h4>{time}</h4>
+            <h1 style={countdownTitle}>Countdown</h1>
+            <h4 style={countdownBody}>{date}</h4>
+            <h4 style={countdownBody}>{time}</h4>
 		</>
 	)
 }

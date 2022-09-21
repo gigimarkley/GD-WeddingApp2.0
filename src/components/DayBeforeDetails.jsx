@@ -1,14 +1,15 @@
 import React from 'react';
+import {pageTitle, detailPageSubtitles, text} from '../styling'
 
 function DayBeforeSchedule() {
     return (
         <>
-            <h1>The Day Before Details</h1>
-                <h4>Attire</h4>
-                    <p>Smart Casual</p>
+            <h1 style={pageTitle}>The Day Before Details</h1>
+                <h4 style={detailPageSubtitles}>Attire</h4>
+                    <p style={text}>Smart Casual</p>
                     <p>insert weather forecast widget</p>
-                <h4>Directions</h4>
-                    <p>insert venue address</p> 
+                <h4 style={detailPageSubtitles}>Directions</h4>
+                    <p style={text}>insert venue address</p> 
                     <p>insert google maps widget</p>
         </>
     );

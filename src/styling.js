@@ -8,5 +8,50 @@ export const colors = {
     mediumGreen : "#828c5a",
     darkGreen : "#5a6731",
     lightBeige : "#dad3cb",
-    Beige : "#c2a484", 
+    beige : "#c2a484", 
+}
+
+
+export const pageTitle = { 
+    color: colors.lightBlue 
+}
+
+export const detailPageSubtitles = { 
+    color: colors.lightGreen 
+}
+
+export const weddingPartyNames = { 
+    color: colors.turquoise 
+}
+
+export const photosPageSubtitles = { 
+    color: colors.mediumGreen 
+}
+
+export const rsvpPageSubtitles = { 
+    color: colors.beige 
+}
+
+export const navTabs = {
+    color: colors.mediumGreen
+}
+
+export const homeNames = {
+    color: colors.mediumGreen
+}
+
+export const homeDetails = {
+    color: colors.lightBeige
+}
+
+export const countdownTitle = {
+    color: colors.darkGreen
+}
+
+export const countdownBody = {
+    color: colors.lightGreen
+}
+
+export const text = {
+    color: 'blue'
 }

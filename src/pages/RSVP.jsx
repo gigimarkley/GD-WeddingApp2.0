@@ -1,19 +1,20 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import {pageTitle,rsvpPageSubtitles} from '../styling'
 
 function RSVP() {
 
     return (
         <>
-            <h1>RSVP Form</h1>
+            <h1 style={pageTitle}>RSVP Form</h1>
             <Form>
                 <FormGroup>
-                    <Label for="exampleText">Names</Label>
+                    <Label style={rsvpPageSubtitles} for="exampleText">Names</Label>
                     <Input type="text" name="text" id="exampleText" />
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="exampleSelect">How many of you will be attending?</Label>
+                    <Label style={rsvpPageSubtitles} for="exampleSelect">How many of you will be attending?</Label>
                     <Input type="select" name="select" id="exampleSelect">
                         <option>1</option>
                         <option>2</option>
@@ -23,7 +24,7 @@ function RSVP() {
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="exampleSelectMulti">Allergies/Dietary Restrictions</Label>
+                    <Label  style={rsvpPageSubtitles} for="exampleSelectMulti">Allergies/Dietary Restrictions</Label>
                     <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
                         <option>Vegetarian</option>
                         <option>Vegan</option>
@@ -38,7 +39,7 @@ function RSVP() {
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="exampleText">Other</Label>
+                    <Label style={rsvpPageSubtitles} for="exampleText">Other</Label>
                     <Input type="text" name="text" id="exampleText" />
                 </FormGroup>
 

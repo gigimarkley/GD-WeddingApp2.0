@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../images/gd-logo.jpg'
-import { colors } from "../styling";
+import { colors, navTabs } from "../styling";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,29 +26,29 @@ function NavbarComponent() {
                <Collapse isOpen={isOpen} navbar>
                    <Nav className="mr-auto" navbar>
                    <NavItem>
-                          <NavLink href="/">Home</NavLink>
+                          <NavLink style={navTabs} href="/">Home</NavLink>
                       </NavItem>
 
                       <NavItem>
-                          <NavLink href="/ourstory">Our Story</NavLink>
+                          <NavLink style={navTabs} href="/ourstory">Our Story</NavLink>
                       </NavItem>
 
     
 
                       <NavItem>
-                          <NavLink href="/details">Details</NavLink>
+                          <NavLink style={navTabs} href="/details">Details</NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink href="/weddingparty">Wedding Party</NavLink>
+                          <NavLink style={navTabs} href="/weddingparty">Wedding Party</NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink href="/photos">Photos</NavLink>
+                          <NavLink style={navTabs} href="/photos">Photos</NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink href="/gifts">Gifts</NavLink>
+                          <NavLink style={navTabs} href="/gifts">Gifts</NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink href="/rsvp">RSVP</NavLink>
+                          <NavLink style={navTabs} href="/rsvp">RSVP</NavLink>
                       </NavItem>
                    </Nav>
                </Collapse>
