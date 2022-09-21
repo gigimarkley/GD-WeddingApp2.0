@@ -7,7 +7,7 @@ import {pageTitle, detailPageSubtitles, text} from '../styling'
 
 function Details() {
     return (
-        <>
+        <div>
             {/* Display for family */}
             <ElopementDetails/>
             {/* Display for family and wedding party */}
@@ -26,7 +26,7 @@ function Details() {
                     <p>insert google maps widget</p>
 
 
-        </>
+        </div>
     );
 }
 
