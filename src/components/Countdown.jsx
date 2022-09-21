@@ -3,8 +3,8 @@ import {countdownTitle, countdownBody} from '../styling'
 
 
 const Countdown = () => {
-	const [time, setTime] = useState('');
-    const [date, setDate] = useState('');
+	const [time, setTime] = useState('0 hours 0 minutes 0 seconds');
+    const [date, setDate] = useState('0 year 0 months 0 days');
     
     const getTimeRemaining = (date) => {
         const diff = Date.parse(date) - Date.parse(new Date());
