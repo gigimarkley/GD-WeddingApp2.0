@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 
 const Countdown = () => {
-
-
-
 	const [time, setTime] = useState('');
     const [date, setDate] = useState('');
     
@@ -26,8 +23,6 @@ const Countdown = () => {
 			diff, years, months, days, hours, minutes, seconds
 		};
 	}
-
-
 
     useEffect(() => {
         const weddingDate = new Date(2023, 9, 7, 5, 30); //YYYY, MM (starts at 0), DD, HH, MM
@@ -60,8 +55,8 @@ const Countdown = () => {
 	return (
 		<>
             <h1>Countdown</h1>
-            <h2>{date}</h2>
-            <h2>{time}</h2>
+            <h4>{date}</h4>
+            <h4>{time}</h4>
 		</>
 	)
 }

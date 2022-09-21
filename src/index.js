@@ -8,6 +8,7 @@ import Gifts from "./pages/Gifts";
 import Details from "./pages/Details";
 import WeddingParty from "./pages/WeddingParty";
 import NoPage from "./pages/NoPage";
+import OurStory from "./pages/OurStory"
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="OurStory" element={<OurStory />} />
           <Route path="RSVP" element={<RSVP />} />
           <Route path="Photos" element={<Photos />} />
           <Route path="Gifts" element={<Gifts />} />

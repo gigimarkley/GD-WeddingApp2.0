@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '.././gd-logo.jpg';
+import logo from '../images/gd-logo.jpg'
 import { colors } from "../styling";
 
 
@@ -28,8 +28,18 @@ function NavbarComponent() {
                    <NavItem>
                           <NavLink href="/">Home</NavLink>
                       </NavItem>
+
                       <NavItem>
-                          <NavLink href="/rsvp">RSVP</NavLink>
+                          <NavLink href="/ourstory">Our Story</NavLink>
+                      </NavItem>
+
+    
+
+                      <NavItem>
+                          <NavLink href="/details">Details</NavLink>
+                      </NavItem>
+                      <NavItem>
+                          <NavLink href="/weddingparty">Wedding Party</NavLink>
                       </NavItem>
                       <NavItem>
                           <NavLink href="/photos">Photos</NavLink>
@@ -37,12 +47,8 @@ function NavbarComponent() {
                       <NavItem>
                           <NavLink href="/gifts">Gifts</NavLink>
                       </NavItem>
-
                       <NavItem>
-                          <NavLink href="/details">Details</NavLink>
-                      </NavItem>
-                      <NavItem>
-                          <NavLink href="/weddingparty">Wedding Party</NavLink>
+                          <NavLink href="/rsvp">RSVP</NavLink>
                       </NavItem>
                    </Nav>
                </Collapse>
