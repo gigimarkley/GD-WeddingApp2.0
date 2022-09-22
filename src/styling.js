@@ -38,13 +38,32 @@ export const text = {
 export const navTabs = {
     color: colors.lace,
     fontFamily: fonts.Montserrat,
-    fontSize: '110%',
 }
 
-export const pageContainers = {
+export const pageContainerWithHeight = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '2000px', 
+    backgroundImage: `url(${backgroundImage})`
+}
+
+export const pageContainerNoHeight = {
+    alignItems: 'center', 
+    textAlign: 'center', 
+    backgroundImage: `url(${backgroundImage})`
+}
+
+export const pageContainerLg = {
+    alignItems: 'center', 
+    textAlign: 'center', 
+    height: '1700px', 
+    backgroundImage: `url(${backgroundImage})`
+}
+
+export const pageContainerSm = {
+    alignItems: 'center', 
+    textAlign: 'center', 
+    height: '800px', 
     backgroundImage: `url(${backgroundImage})`
 }
 
@@ -52,18 +71,16 @@ export const pageContainers = {
 export const homeNames = {
     color: colors.navyBlue,
     fontFamily: fonts.MeowScript,
-    fontSize: '500%',
+    fontSize: '8.1vw',
     textAlign: 'center',
-    padding: '10px',
-    width: '100%',
 }
 
 export const homeDetails = {
     color: colors.lace,
     fontFamily: fonts.Montserrat,
-    fontSize: '150%',
     alignItems: 'center',
     textAlign: 'center',
+    fontSize: '3vw',
 }
 
 export const countdownTitle = {
@@ -82,10 +99,40 @@ export const countdownBody = {
 }
 
 export const countdownContainer = {
-    marginTop: '30px', 
-    alignItems: 'center'  
+    margin: '30px', 
+    alignItems: 'center',
+    padding: '10px'
+
 }
 
+//Our Story
+export const storyCard = {
+    alignItems: 'center', 
+    textAlign: 'center',
+    backgroundColor: 'transparent',
+    borderColor: 'transparent',
+    fontFamily: fonts.Montserrat,
+    margin:'20px'
+}
+
+export const testPillLeft = {
+    alignItems: 'center', 
+    textAlign: 'center',
+    backgroundColor: 'transparent',
+    borderColor: 'transparent',
+    fontFamily: fonts.Montserrat,
+    margin:'20px'
+}
+
+export const testpillRight = {
+    alignItems: 'center', 
+    textAlign: 'center',
+    backgroundColor: 'transparent',
+    borderColor: 'transparent',
+    fontFamily: fonts.Montserrat,
+    margin:'20px'
+
+}
 
 //Used on Details Page
 export const detailPageSubtitles = { 
@@ -127,18 +174,18 @@ export const detailsWeddingPartyContainer = {
 //Wedding Party Page
 export const weddingPartyNames = { 
     color: colors.lace,
-    fontFamily: fonts.MeowScript
+    fontFamily: fonts.MeowScript,
 }
 
 export const weddingPartyCards = { 
-    width:'450px',
-    height:'450px',
+    width:'40vw',
     backgroundColor: colors.navyBlue
 }
 
 export const weddingPartyDescription = {
     color: colors.lightBlue,
-    fontFamily: fonts.Montserrat
+    fontFamily: fonts.Montserrat,
+    fontSize: '15px'
 }
 
 export const weddingPartyRow = {

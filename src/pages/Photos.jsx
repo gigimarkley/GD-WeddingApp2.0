@@ -1,9 +1,9 @@
 import React from 'react';
-import {pageTitle, photosPageSubtitles, pageContainers} from '../styling'
+import {pageTitle, photosPageSubtitles, pageContainerSm} from '../styling'
 
 function Photos() {
     return (
-        <div style={pageContainers}>
+        <div style={pageContainerSm}>
         <h1 style={pageTitle}>Photos</h1>
             <h2 style={photosPageSubtitles}>The Markley-Kerr Family</h2>
                 <p>pictures of the cats and us</p>

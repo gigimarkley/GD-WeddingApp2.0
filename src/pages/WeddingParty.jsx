@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card, CardBody, CardFooter, CardHeader, Col, Row } from 'reactstrap';
 import placeholderpic from '../images/placeholderpic.png'
-import {pageTitle, weddingPartyNames, weddingPartyDescription, weddingPartyCards, pageContainers, weddingPartyRow } from '../styling'
+import {pageTitle, weddingPartyNames, weddingPartyDescription, weddingPartyCards, pageContainerNoHeight, weddingPartyRow } from '../styling'
 
 function WeddingParty() {
     return (
-        <div style={pageContainers}>
+        <div style={pageContainerNoHeight}>
             <h1 style={pageTitle}>Wedding Party</h1>
             <Row style={weddingPartyRow}>   
                 <Col></Col>
@@ -18,7 +18,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 
@@ -31,7 +31,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 
@@ -48,7 +48,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 
@@ -61,7 +61,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 
@@ -78,7 +78,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 
@@ -91,7 +91,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 
@@ -108,7 +108,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 
@@ -121,7 +121,7 @@ function WeddingParty() {
                         <img src={placeholderpic} alt="logo" width="60%" />
                         </CardBody>
                         <CardFooter>
-                        <p style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</p>
+                        <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
                         </CardFooter>
                     </Card>
                 </Col> 

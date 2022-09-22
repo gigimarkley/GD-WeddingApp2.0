@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import {pageTitle,rsvpPageSubtitles, pageContainers} from '../styling'
+import {pageTitle,rsvpPageSubtitles, pageContainerNoHeight} from '../styling'
 
 function RSVP() {
 
     return (
-        <div style={pageContainers}>
+        <div style={pageContainerNoHeight}>
             <h1 style={pageTitle}>RSVP</h1>
-            <Form>
+            <Form style={{paddingLeft:'10vw',paddingRight:'10vw', paddingBottom:'10vw'}}>
                 <FormGroup>
                     <Label style={rsvpPageSubtitles} for="exampleSelect">Will you be able to make it?</Label>
                     <Input type="select" name="select" id="exampleSelect">

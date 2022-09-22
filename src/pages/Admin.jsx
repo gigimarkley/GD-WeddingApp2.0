@@ -1,9 +1,9 @@
 import React from 'react';
-import {pageTitle, pageContainers} from '../styling'
+import {pageTitle, pageContainerSm} from '../styling'
 
 function Admin() {
     return (
-        <div style={pageContainers}>
+        <div style={pageContainerSm}>
             <h1 style={pageTitle}>Admin Page</h1>
             <p>Insert guest information and stuff</p>
         </div>
