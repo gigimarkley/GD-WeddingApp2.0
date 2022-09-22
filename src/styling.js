@@ -55,13 +55,13 @@ export const homeNames = {
     fontSize: '500%',
     textAlign: 'center',
     padding: '10px',
-    width: '50%',
+    width: '100%',
 }
 
 export const homeDetails = {
     color: colors.lace,
     fontFamily: fonts.Montserrat,
-    fontSize: '200%',
+    fontSize: '150%',
     alignItems: 'center',
     textAlign: 'center',
 }

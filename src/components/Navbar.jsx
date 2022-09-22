@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../images/gd-logo.jpg'
 import { colors, navTabs } from "../styling";
 
 
@@ -17,16 +16,13 @@ function NavbarComponent() {
     const [isOpen, setIsOpen] = React.useState(false);
   
     return (
-        <div style={{
-           display: 'block', width: '100%', padding: 30, backgroundColor: colors.dustyBlue
-       }}>
-            <Navbar style={{ backgroundColor: colors.lightBlue }} expand="md">
-                <img src={logo} className="App-logo" alt="logo" width="10%" height="10%" />
+        <div style={{width: '100%', padding: 30, backgroundColor: colors.dustyBlue}}>
+            <Navbar style={{marginLeft: '5%', marginRight: '5%', backgroundColor: colors.lightBlue, width: '90%' }} expand="md">
                 <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto" navbar>
+                    <Nav style={{justifyContent: 'space-between',display:'flex', width:'100%'}} className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink style={navTabs} href="/">Home</NavLink>
+                            <NavLink style={navTabs}  href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink style={navTabs} href="/ourstory">Our Story</NavLink>
