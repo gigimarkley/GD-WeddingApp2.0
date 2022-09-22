@@ -1,12 +1,14 @@
 import React from 'react';
-import {pageTitle} from '../styling'
-import backgroundImage from '../images/background.png'
+import {pageTitle, pageContainers} from '../styling'
+import timelineImage from '../images/timeline.png'
+import Footer from '../components/Footer';
 
 function OurStory() {
     return (
-        <div style={{alignItems: 'center', textAlign: 'center', height: '2000px', backgroundImage: `url(${backgroundImage})` }}>
+        <div style={pageContainers}>
             <h1 style={pageTitle}>Our Story</h1>
-            <p>insert story image here</p>
+            <img src={timelineImage}  alt="logo" width="50%"/>
+            <Footer/>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container } from 'reactstrap';
-import {countdownTitle, countdownBody} from '../styling'
+import {countdownTitle, countdownBody, countdownContainer} from '../styling'
 
 
 const Countdown = () => {
@@ -55,7 +55,7 @@ const Countdown = () => {
 
 
 	return (
-		<Container style={{marginTop: '30px', alignItems: 'center'}}>
+		<Container style={countdownContainer}>
             <h1 style={countdownTitle}>Countdown</h1>
             <h4 style={countdownBody}>{date}</h4>
             <h4 style={countdownBody}>{time}</h4>

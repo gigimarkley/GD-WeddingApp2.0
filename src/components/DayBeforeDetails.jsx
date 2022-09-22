@@ -1,9 +1,9 @@
 import React from 'react';
-import {pageTitle, detailPageSubtitles, text, detailPageSubtitles2} from '../styling'
+import {detailsContainers, pageTitle, detailPageSubtitles, text, detailPageSubtitles2} from '../styling'
 
 function DayBeforeSchedule() {
     return (
-        <div style={{paddingTop:'30px'}}>
+        <div style={detailsContainers}>
             <h1 style={pageTitle}>Day Before the Reception</h1>
                 <h3 style={detailPageSubtitles2}>Tea Party Brunch</h3>
                     <h5 style={detailPageSubtitles}>Date/Time</h5>

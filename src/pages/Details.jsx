@@ -3,22 +3,15 @@ import ElopementDetails from '../components/Elopement';
 import ElopementDinnerDetails from '../components/ElopementDinner';
 import DayBeforeSchedule from '../components/DayBeforeDetails';
 import DayOfSchedule from '../components/DayOfSchedule';
-import {pageTitle, detailPageSubtitles, text} from '../styling'
-import backgroundImage from '../images/background.png'
+import {detailsContainers, 
+    pageTitle, 
+    detailPageSubtitles, 
+    text, 
+    detailsAdminContainer} from '../styling'
 
 function Details() {
     return (
-        //Just wedding guests
-        // <div style={{ alignItems: 'center', textAlign: 'center', height: '2000px', backgroundImage: `url(${backgroundImage})` }}>
-        
-        //For family
-        // <div style={{ alignItems: 'center', textAlign: 'center', height: '2400px', backgroundImage: `url(${backgroundImage})` }}>
-
-        //For wedding party
-        // <div style={{ alignItems: 'center', textAlign: 'center', height: '2600px', backgroundImage: `url(${backgroundImage})` }}>
-
-        // admin
-        <div style={{ alignItems: 'center', textAlign: 'center', height: '3000px', backgroundImage: `url(${backgroundImage})` }}> 
+        <div style={detailsAdminContainer}> 
             {/* Display for family */}
             <ElopementDetails/>
             
@@ -32,7 +25,7 @@ function Details() {
             <DayOfSchedule/>
             
             {/* Display for all */}
-            <div style={{paddingTop:'30px'}}>
+            <div style={detailsContainers}>
             <h1  style={pageTitle}>Wedding Reception</h1>
                 <h4 style={detailPageSubtitles}>Date/Time</h4>
                     <p style={text}>Thursday, October 7th, 2023 at 5 PM</p>
@@ -43,7 +36,7 @@ function Details() {
                     <p style={text}>Semi-Formal</p>
                     <p>insert weather forecast widget</p>
             </div>
-
+            
         </div>
     );
 }

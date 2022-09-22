@@ -1,10 +1,9 @@
 import React from 'react';
-import {pageTitle, text} from '../styling'
-import backgroundImage from '../images/background.png'
+import {pageTitle, text, pageContainers} from '../styling'
 
 function Gifts() {
     return (
-        <div style={{alignItems: 'center', textAlign: 'center', height: '2000px', backgroundImage: `url(${backgroundImage})` }}>
+        <div style={pageContainers}>
             <h1 style={pageTitle}>Gifts</h1>
             <p  style={text}>
                 Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift, a cash gift would be greatly appreciated.

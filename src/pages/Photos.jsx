@@ -1,10 +1,9 @@
 import React from 'react';
-import {pageTitle, photosPageSubtitles} from '../styling'
-import backgroundImage from '../images/background.png'
+import {pageTitle, photosPageSubtitles, pageContainers} from '../styling'
 
 function Photos() {
     return (
-        <div style={{alignItems: 'center', textAlign: 'center', height: '2000px', backgroundImage: `url(${backgroundImage})` }}>
+        <div style={pageContainers}>
         <h1 style={pageTitle}>Photos</h1>
             <h2 style={photosPageSubtitles}>The Markley-Kerr Family</h2>
                 <p>pictures of the cats and us</p>
