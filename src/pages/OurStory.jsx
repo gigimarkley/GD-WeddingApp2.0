@@ -1,5 +1,5 @@
 import React from 'react';
-import {pageTitle, pageContainerLg} from '../styling'
+import {pageTitle, pageContainerLg, pageContainerXl} from '../styling'
 import placeholderpic from '../images/placeholderpic.png'
 import StoryCard from '../components/StoryCard';
 
@@ -17,10 +17,19 @@ const cardInformation = [
 
 function OurStory() {
     return (
+        (window.innerWidth >= 800) ? 
+        (
+            <div style={pageContainerXl}>
+                <h1 style={pageTitle}>Our Story</h1>
+                {cardInformation.map((card,i)=> <StoryCard key={i} cardInfo={card}/>)}
+            </div>
+        ) :
+        (
         <div style={pageContainerLg}>
             <h1 style={pageTitle}>Our Story</h1>
             {cardInformation.map((card,i)=> <StoryCard key={i} cardInfo={card}/>)}
         </div>
+        )
     );
 }
 

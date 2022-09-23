@@ -53,10 +53,31 @@ export const pageContainerNoHeight = {
     backgroundImage: `url(${backgroundImage})`
 }
 
+export const pageContainer600Height = {
+    alignItems: 'center', 
+    textAlign: 'center', 
+    backgroundImage: `url(${backgroundImage})`,
+    height: '600px'
+}
+
+export const pageContainerXl = {
+    alignItems: 'center', 
+    textAlign: 'center', 
+    height: '3300px', 
+    backgroundImage: `url(${backgroundImage})`
+}
+
 export const pageContainerLg = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '1700px', 
+    backgroundImage: `url(${backgroundImage})`
+}
+
+export const pageContainerMd = {
+    alignItems: 'center', 
+    textAlign: 'center', 
+    height: '1200px', 
     backgroundImage: `url(${backgroundImage})`
 }
 
@@ -68,11 +89,25 @@ export const pageContainerSm = {
 }
 
 // Home Page
-export const homeNames = {
+export const homeNamesWeb = {
     color: colors.navyBlue,
     fontFamily: fonts.MeowScript,
-    fontSize: '8.1vw',
+    fontSize: '6vw',
     textAlign: 'center',
+}
+export const homeNamesMobile = {
+    color: colors.navyBlue,
+    fontFamily: fonts.MeowScript,
+    fontSize: '300%',
+    textAlign: 'center',
+}
+
+export const homeAndMobile = {
+    color: colors.navyBlue,
+    fontFamily: fonts.MeowScript,
+    fontSize: '200%',
+    textAlign: 'center',
+    margin:'-10px'
 }
 
 export const homeDetails = {
@@ -80,13 +115,22 @@ export const homeDetails = {
     fontFamily: fonts.Montserrat,
     alignItems: 'center',
     textAlign: 'center',
+    fontSize: '2vw',
+}
+
+export const homeDetailsMobile = {
+    color: colors.lace,
+    fontFamily: fonts.Montserrat,
+    alignItems: 'center',
+    textAlign: 'center',
     fontSize: '3vw',
 }
+
 
 export const countdownTitle = {
     color: colors.navyBlue,
     fontFamily: fonts.Montserrat,
-    fontSize: '250%',
+    fontSize: '150%',
     alignItems: 'center',
     textAlign: 'center',
 }
@@ -99,10 +143,8 @@ export const countdownBody = {
 }
 
 export const countdownContainer = {
-    margin: '30px', 
     alignItems: 'center',
     padding: '10px'
-
 }
 
 //Our Story

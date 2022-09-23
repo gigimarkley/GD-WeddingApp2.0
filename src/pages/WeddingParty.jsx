@@ -15,7 +15,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Gaby</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
@@ -28,7 +28,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Alex</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
@@ -45,7 +45,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Shawdee</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
@@ -58,7 +58,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Ted</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
@@ -75,7 +75,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Julia</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
@@ -88,7 +88,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Jacob</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
@@ -105,7 +105,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Sonja</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>
@@ -118,7 +118,7 @@ function WeddingParty() {
                             <h2 style={weddingPartyNames}>Aaron</h2> 
                         </CardHeader>
                         <CardBody>
-                        <img src={placeholderpic} alt="logo" width="60%" />
+                        <img src={placeholderpic} alt="logo" width="100%" />
                         </CardBody>
                         <CardFooter>
                         <div style={weddingPartyDescription}>little thingy about our relationship little thingy about our relationship little thingy about our relationship little thingy about our relationship</div>

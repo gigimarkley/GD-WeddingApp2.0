@@ -57,8 +57,8 @@ const Countdown = () => {
 	return (
 		<Container style={countdownContainer}>
             <h1 style={countdownTitle}>Countdown</h1>
-            <h4 style={countdownBody}>{date}</h4>
-            <h4 style={countdownBody}>{time}</h4>
+            <h6 style={countdownBody}>{date}</h6>
+            <h6 style={countdownBody}>{time}</h6>
 		</Container>
 	)
 }
