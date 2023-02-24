@@ -1,4 +1,6 @@
-import backgroundImage from './images/background.png'
+// import backgroundImage from './images/background.png'
+import { NavLink as Link } from "react-router-dom";
+import styled from "styled-components";
 
 export const colors = {
     lace : '#FFF8EB', 
@@ -9,10 +11,18 @@ export const colors = {
     mediumGreen : "#5E945D",
     darkGreen : "#035600",
 
-    lightBlue :"#BFDDED",
-    dustyBlue : "#7DB9DA",
-    greyBlue : "#548CB6", 
-    navyBlue : "#005D7F",
+    // D4E9FF light blue
+    // 9FC2E8 light medium blue
+    // #7AB0EB medium blue
+    // 427ACE dark medium blue
+    //315AA5 dark blue
+    //15265E navy blue
+    lightBlue :"#D4E9FF",
+    lightMedBlue : "#9FC2E8",
+    mediumBlue : "#7AB0EB", 
+    darkMedBlue: "#427ACE",
+    darkBlue:"#315AA5",
+    navyBlue : "#15265E",
 }
 
 export const fonts = {
@@ -40,52 +50,72 @@ export const navTabs = {
     fontFamily: fonts.Montserrat,
 }
 
+export const NavLink = styled(Link)`
+    color: ${colors.lightBlue};
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    &.active {
+        color: ${colors.darkMedBlue};
+    }
+    `;
+
 export const pageContainerWithHeight = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '2000px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 export const pageContainerNoHeight = {
     alignItems: 'center', 
     textAlign: 'center', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 export const pageContainer600Height = {
     alignItems: 'center', 
     textAlign: 'center', 
-    backgroundImage: `url(${backgroundImage})`,
-    height: '600px'
+    // backgroundImage: `url(${backgroundImage})`,
+    height: '600px',
+    backgroundColor: colors.lightBlue
 }
 
 export const pageContainerXl = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '3300px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 export const pageContainerLg = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '1700px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 export const pageContainerMd = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '1200px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 export const pageContainerSm = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '800px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 // Home Page
@@ -136,7 +166,7 @@ export const countdownTitle = {
 }
 
 export const countdownBody = {
-    color: colors.greyBlue,
+    color: colors.mediumBlue,
     fontFamily: fonts.Montserrat,
     alignItems: 'center',
     textAlign: 'center', 
@@ -183,7 +213,7 @@ export const detailPageSubtitles = {
 }
 
 export const detailPageSubtitles2 = { 
-    color: colors.greyBlue,
+    color: colors.mediumBlue,
     fontFamily: fonts.Montserrat
 }
 
@@ -195,21 +225,25 @@ export const detailsAdminContainer = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '3000px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 export const detailsFamilyContainer = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '2400px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
 }
 
 export const detailsWeddingPartyContainer = {
     alignItems: 'center', 
     textAlign: 'center', 
     height: '2600px', 
-    backgroundImage: `url(${backgroundImage})`
+    // backgroundImage: `url(${backgroundImage})`
+    backgroundColor: colors.lightBlue
+    
 }
 
 

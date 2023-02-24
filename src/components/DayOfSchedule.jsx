@@ -7,7 +7,7 @@ function DayOfSchedule() {
             <h1 style={pageTitle}>Day Of the Reception</h1>
                 <h3 style={detailPageSubtitles2}>More Prep</h3>
                     <h5 style={detailPageSubtitles}>Date/Time</h5>
-                        <p style={text}>Friday, October 7th, 2023 at 9 AM</p>
+                        <p style={text}>Friday, September 30th, 2023 at 9 AM</p>
                     <h5 style={detailPageSubtitles}>Location</h5>
                         <p style={text}>Our House, 772 W 1st St, Claremont, CA</p> 
                         <p>insert google maps widget</p>

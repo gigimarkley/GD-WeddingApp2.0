@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Container } from 'reactstrap';
 import {countdownTitle, countdownBody, countdownContainer} from '../styling'
+import Loading from './Loading';
 
 
 const Countdown = () => {
 	const [time, setTime] = useState('0 hours 0 minutes 0 seconds');
     const [date, setDate] = useState('0 year 0 months 0 days');
+    const [isLoading, setIsLoading] = useState(true)
     
     const getTimeRemaining = (date) => {
         const diff = Date.parse(date) - Date.parse(new Date());
@@ -27,8 +29,7 @@ const Countdown = () => {
 	}
 
     useEffect(() => {
-        const weddingDate = new Date(2023, 9, 7, 5, 30); //YYYY, MM (starts at 0), DD, HH, MM
-
+        const weddingDate = new Date(2023, 8, 30, 11, 0); //YYYY, MM (starts at 0), DD, HH, MM
         const startCountdown = (e) => {
             let { diff, years, months, days, hours, minutes, seconds }
                         = getTimeRemaining(e);
@@ -44,6 +45,7 @@ const Countdown = () => {
                     (((months === 0) && (years === 0))? '' : (months + ' months ')) +
                     (days + ' days ' )
                 )
+                setIsLoading(false)
             }
         }
     
@@ -57,8 +59,11 @@ const Countdown = () => {
 	return (
 		<Container style={countdownContainer}>
             <h1 style={countdownTitle}>Countdown</h1>
-            <h6 style={countdownBody}>{date}</h6>
-            <h6 style={countdownBody}>{time}</h6>
+            {/* If it is still loading, display a loading thingy */}
+            {isLoading ? <Loading/>:<>
+                <h6 style={countdownBody}>{date}</h6>
+                <h6 style={countdownBody}>{time}</h6>
+            </>}
 		</Container>
 	)
 }

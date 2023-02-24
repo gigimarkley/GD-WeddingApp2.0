@@ -4,7 +4,7 @@ import {colors, fonts} from '../styling'
 
 function Footer() {
     return (
-        <div style={{textAlign: 'center', display: 'block', width: '100%', padding: 30, backgroundColor: colors.dustyBlue}}>
+        <div style={{textAlign: 'center', display: 'block', width: '100%', padding: 30, backgroundColor: colors.lightMedBlue}}>
             <h3 style={{color: colors.lace,fontFamily: fonts.MeowScript}}>
                 This website was made with love by Gillian
             </h3>
