@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf30802c.css",
+    "main.js": "/static/js/main.b65a16b2.js",
+    "static/js/787.b3ba9ff0.chunk.js": "/static/js/787.b3ba9ff0.chunk.js",
+    "static/media/attire-ideas.png": "/static/media/attire-ideas.8f4ea4db416a04eecc7a.png",
+    "static/media/mara.jpeg": "/static/media/mara.3480d4fae704fc5f9edf.jpeg",
+    "static/media/house.jpeg": "/static/media/house.d8e24109667d5598040a.jpeg",
+    "static/media/engagement.jpeg": "/static/media/engagement.b6daedb621a7f0a7bd98.jpeg",
+    "static/media/apartment.JPG": "/static/media/apartment.373649b21468324e7d9b.JPG",
+    "static/media/hades.JPG": "/static/media/hades.61d66147c5afc96fdb0d.JPG",
+    "static/media/softwareengineer.jpeg": "/static/media/softwareengineer.6ada96c17a66dd43fd1a.jpeg",
+    "static/media/gd-home.png": "/static/media/gd-home.5b48d105f3d071b967e7.png",
+    "static/media/cat-loader.png": "/static/media/cat-loader.796648276ac4cc29ea32.png",
+    "static/media/malldate.jpeg": "/static/media/malldate.c18267f4c04eea8f9cfe.jpeg",
+    "static/media/flower-border.png": "/static/media/flower-border.cd9750b876af6e2a23b1.png",
+    "static/media/bumble.png": "/static/media/bumble.9d6e07cf723fad74dfb5.png",
+    "static/media/placeholderpic.png": "/static/media/placeholderpic.8a65da5989432899c4d1.png",
+    "index.html": "/index.html",
+    "main.bf30802c.css.map": "/static/css/main.bf30802c.css.map",
+    "main.b65a16b2.js.map": "/static/js/main.b65a16b2.js.map",
+    "787.b3ba9ff0.chunk.js.map": "/static/js/787.b3ba9ff0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf30802c.css",
+    "static/js/main.b65a16b2.js"
+  ]
+}
