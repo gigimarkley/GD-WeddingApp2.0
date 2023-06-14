@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route}
 	from 'react-router-dom';
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
+import Home from "./pages/Home"
 import RSVP from "./pages/RSVP";
 import Photos from "./pages/Photos";
 import Gifts from "./pages/Gifts";

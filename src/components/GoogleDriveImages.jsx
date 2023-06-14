@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { photoSampleSetContainer, photoContainer } from '../styling';
+
 
 const GoogleDriveImages = ({ folderId }) => {
   const [images, setImages] = useState([]);
@@ -13,15 +15,18 @@ const GoogleDriveImages = ({ folderId }) => {
         console.error(error);
       }
     };
-
     loadImages();
   }, [folderId]);
 
+const showImages = [
+  "1POp3VSz9nyA5noeJdu9YdUCjVBpwE4Zp",//Markley-Kerr
+  "1Q378bMuEWoMibYzw69jcUSEITscXh2AD" //Wedding day
+]
   return (
     <div>
-      <div className="image-grid">
+      <div className="hstack" style={photoSampleSetContainer}>
         {images.map((image) => (
-          <img key={image.id} src={image.thumbnailLink} alt={image.name} />
+          (showImages.includes(image.id)) && <img key={image.id} src={image.thumbnailLink} alt={image.name} style={photoContainer}  />
         ))}
       </div>
     </div>

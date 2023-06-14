@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container } from 'reactstrap';
-import {countdownTitle, countdownBody, countdownContainer} from '../styling'
+import {pageTitle, countdownBody, countdownContainer} from '../styling'
 import Loading from './Loading';
 
 
@@ -58,8 +58,7 @@ const Countdown = () => {
 
 	return (
 		<Container style={countdownContainer}>
-            <h1 style={countdownTitle}>Countdown</h1>
-            {/* If it is still loading, display a loading thingy */}
+            <h1 style={pageTitle}>Countdown</h1>
             {isLoading ? <Loading/>:<>
                 <h6 style={countdownBody}>{date}</h6>
                 <h6 style={countdownBody}>{time}</h6>

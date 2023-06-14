@@ -1,4 +1,4 @@
-// import backgroundImage from './images/background.png'
+import backgroundImage from './images/background.png'
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -6,23 +6,16 @@ export const colors = {
     lace : '#FFF8EB', 
     lightBeige : "#FFE1AD",
     beige : "#d4b37fff", 
-
     lightGreen : "#b9d1baff",
     mediumGreen : "#5E945D",
     darkGreen : "#035600",
-
-    // D4E9FF light blue
-    // 9FC2E8 light medium blue
-    // #7AB0EB medium blue
-    // 427ACE dark medium blue
-    //315AA5 dark blue
-    //15265E navy blue
     lightBlue :"#D4E9FF",
     lightMedBlue : "#9FC2E8",
     mediumBlue : "#7AB0EB", 
     darkMedBlue: "#427ACE",
     darkBlue:"#315AA5",
     navyBlue : "#15265E",
+    black: "black,"
 }
 
 export const fonts = {
@@ -37,12 +30,15 @@ export const fonts = {
 export const pageTitle = { 
     color: colors.navyBlue,
     fontFamily: fonts.Montserrat,
-    padding: '20px'
+    padding: '20px',
+    fontWeight: 'bold'
 }
 
 export const text = {
-    color: colors.mediumGreen,
-    fontFamily: fonts.Montserrat
+    // color: colors.darkGreen,
+    fontWeight: 'bold',
+    fontFamily: fonts.Montserrat,
+    // backgroundColor: colors.mediumBlue
 }
 
 export const navTabs = {
@@ -78,12 +74,30 @@ export const pageContainerNoHeight = {
     backgroundColor: colors.lightBlue
 }
 
-export const pageContainer600Height = {
+export const mobilePageStyle = {
     alignItems: 'center', 
     textAlign: 'center', 
-    // backgroundImage: `url(${backgroundImage})`,
-    height: '600px',
-    backgroundColor: colors.lightBlue
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundColor: colors.lightBlue,
+}
+
+export const mobileHeaderStyle = {
+    alignItems: 'center', 
+    paddingTop: '30px', 
+    paddingBottom: '1px', 
+    backgroundColor: colors.lightMedBlue
+}
+
+export const mobileHeaderText = {
+    marginTop: '20px', 
+    alignItems: 'center',
+    width: '100%', 
+}
+
+export const mobileHeaderImage = {
+    alignItems: 'center', 
+    textAlign: 'center',
+    width: '100%', 
 }
 
 export const pageContainerXl = {
@@ -156,96 +170,61 @@ export const homeDetailsMobile = {
     fontSize: '3vw',
 }
 
-
-export const countdownTitle = {
-    color: colors.navyBlue,
-    fontFamily: fonts.Montserrat,
-    fontSize: '150%',
+export const countdownContainer = {
     alignItems: 'center',
-    textAlign: 'center',
+    padding: '10px',
+    paddingTop: '20px',
+    paddingBottom: '20px',
+    borderRadius: '55px',
 }
-
 export const countdownBody = {
-    color: colors.mediumBlue,
+    color: colors.navyBlue,
     fontFamily: fonts.Montserrat,
     alignItems: 'center',
     textAlign: 'center', 
-}
-
-export const countdownContainer = {
-    alignItems: 'center',
-    padding: '10px'
 }
 
 //Our Story
-export const storyCard = {
+export const storyCardMobile = {
     alignItems: 'center', 
     textAlign: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: colors.mediumBlue,
     borderColor: 'transparent',
     fontFamily: fonts.Montserrat,
-    margin:'20px'
+    paddingTop: '20px',
+    paddingBottom: '20px',
+    borderRadius: '55px',
+    margin: '20px',
 }
 
-export const testPillLeft = {
-    alignItems: 'center', 
-    textAlign: 'center',
-    backgroundColor: 'transparent',
-    borderColor: 'transparent',
-    fontFamily: fonts.Montserrat,
-    margin:'20px'
-}
-
-export const testpillRight = {
-    alignItems: 'center', 
-    textAlign: 'center',
-    backgroundColor: 'transparent',
-    borderColor: 'transparent',
-    fontFamily: fonts.Montserrat,
-    margin:'20px'
-
-}
 
 //Used on Details Page
 export const detailPageSubtitles = { 
-    color: colors.darkGreen,
-    fontFamily: fonts.Montserrat
+    color: colors.darkBlue,
+    fontFamily: fonts.Montserrat,
 }
 
 export const detailPageSubtitles2 = { 
-    color: colors.mediumBlue,
-    fontFamily: fonts.Montserrat
+    color: colors.darkMedBlue,
+    fontFamily: fonts.Montserrat,
+    fontStyle: 'italic',
+    fontWeight: 'bold'
+}
+
+export const detailPageText = {
+    color: colors.darkGreen,
+    fontFamily: fonts.Montserrat,
 }
 
 export const detailsContainers = {
-    paddingTop:'30px'
+    // paddingTop:'30px',
 }
 
-export const detailsAdminContainer = {
+export const mobilePageStyleDetails = {
     alignItems: 'center', 
     textAlign: 'center', 
-    height: '3000px', 
-    // backgroundImage: `url(${backgroundImage})`
-    backgroundColor: colors.lightBlue
+    backgroundColor: colors.lightBlue,
 }
-
-export const detailsFamilyContainer = {
-    alignItems: 'center', 
-    textAlign: 'center', 
-    height: '2400px', 
-    // backgroundImage: `url(${backgroundImage})`
-    backgroundColor: colors.lightBlue
-}
-
-export const detailsWeddingPartyContainer = {
-    alignItems: 'center', 
-    textAlign: 'center', 
-    height: '2600px', 
-    // backgroundImage: `url(${backgroundImage})`
-    backgroundColor: colors.lightBlue
-    
-}
-
 
 //Wedding Party Page
 export const weddingPartyNames = { 
@@ -270,8 +249,21 @@ export const weddingPartyRow = {
 
 //Photos Page
 export const photosPageSubtitles = { 
-    color: colors.mediumGreen,
-    fontFamily: fonts.Montserrat 
+    color: colors.darkGreen,
+    fontFamily: fonts.Montserrat,
+    marginTop: '20px'
+}
+
+export const photoSampleSetContainer = {
+    backgroundColor:colors.darkMedBlue,
+    width: '100%'
+}
+
+export const photoContainer = {
+    width:'100%', 
+    borderRadius:'5px',
+    margin: '5px',
+    objectFit: 'fill'
 }
 
 //RSVP Page

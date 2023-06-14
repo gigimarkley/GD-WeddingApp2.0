@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Row, Col} from 'reactstrap';
-import {storyCard} from '../styling'
+import {storyCardMobile} from '../styling'
 
 function StoryCard({cardInfo}) {
 
     return (
  (window.innerWidth >= 800) ? (
-    <Card style={storyCard}>
+    <Card style={storyCardMobile}>
         <Row style={{width:'80%'}}>
             <Col style={{textAlign: 'right'}}>
                 <h4 style={{ marginTop:'8vw'}}>{cardInfo.date}</h4>
@@ -14,7 +14,7 @@ function StoryCard({cardInfo}) {
             </Col>
             <Col>
                 <Row>
-                    <Col><img src={cardInfo.pic} alt="logo" width="300vw" /></Col>
+                    <Col><img src={cardInfo.pic} alt="logo" width="400vw" /></Col>
                     <Col></Col>
                 </Row>
                 
@@ -23,14 +23,13 @@ function StoryCard({cardInfo}) {
     </Card>
  ) : 
  (
-    <Card style={storyCard}>
+    <Card style={storyCardMobile}>
         <Row style={{width:'90%'}}>
             <Col>
                 <h4>{cardInfo.date}</h4>
                 <p>{cardInfo.description}</p>
-            </Col>
-            <Col>
-                <img src={cardInfo.pic} alt="logo" width="125vw" />
+       
+                <img src={cardInfo.pic} alt="logo" width={window.innerWidth*.5} />
             </Col>
         </Row>
     </Card>

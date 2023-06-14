@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card, CardBody, CardFooter, CardHeader, Col, Row } from 'reactstrap';
 import placeholderpic from '../images/placeholderpic.png'
-import {pageTitle, weddingPartyNames, weddingPartyDescription, weddingPartyCards, pageContainerNoHeight, weddingPartyRow } from '../styling'
+import {pageTitle, weddingPartyNames, weddingPartyDescription, weddingPartyCards, pageContainerNoHeight, weddingPartyRow, mobilePageStyle,pageContainerMd } from '../styling'
 
 function WeddingParty() {
     return (
-        <div style={pageContainerNoHeight}>
+        <div style={(window.innerWidth <= 800)?(mobilePageStyle):(pageContainerMd)}>  
             <h1 style={pageTitle}>Wedding Party</h1>
             <Row style={weddingPartyRow}>   
                 <Col></Col>
